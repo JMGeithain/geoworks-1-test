@@ -29,7 +29,7 @@ SEITEN (Reiter, Tasten 1-9 und 0, Menue "Seite")
                  Malflaeche: mit gedrueckter Maustaste zeichnen (eigenes Vis-Objekt
                  mit Mausgriff wie im Kindermaler)
   9 Schriften    alle Schriftdateien in GEOWORKS\FONT: Name, Datei, Font-ID,
-                 Bitmap (mit Groessen) / Umriss (Nimbus) / Drucker, dazu ein
+                 Bitmap (mit Groessen) / Outline (Nimbus) / Drucker, dazu ein
                  Muster in der Schrift selbst; Systemschrift aus GEOS.INI.
                  GeoWorks 1 hat kein GrEnumFonts fuer Programme: die App liest
                  den Kopf jeder .FNT-Datei ("BSWF") selbst (FileEnum).

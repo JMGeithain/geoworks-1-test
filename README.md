@@ -42,7 +42,7 @@ K kopieren, H/? Hilfe, I Info, Esc Übersicht. Alle Anzeigen in Berkeley.
 - **Schriften:** Programme haben kein `GrEnumFonts`. Die App liest mit
   `FileEnum` (Kernel 65) die `.FNT`-Dateien und deren Kopf: `"BSWF"`, Font-ID
   bei 8, Hersteller bei 0Ah (0 Bitmap, 1000h Nimbus, F000h Drucker), Name ab
-  0Dh, Größen- und Umrisstabelle bei 21h–27h (Offsets + 6).
+  0Dh, Größen- und Outline-Tabelle bei 21h–27h (Offsets + 6).
 - **Klang:** Eine Sound-Bibliothek gibt es erst ab GEOS 2. Die App steuert
   den PC-Lautsprecher (Zeitgeber 2, Ports 42h/43h/61h) und `TimerSleep`
   (Kernel 184). Jede Note ist eine Nachricht an den eigenen Prozess mit

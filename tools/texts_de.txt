@@ -32,7 +32,7 @@ c_fkind = Art und Größen
 c_fsample = Muster in der Schrift
 s_nofonts = keine Schriften gefunden (Ordner GEOWORKS\FONT)
 s_kprinter = Drucker
-s_koutline = Umriss (Nimbus)
+s_koutline = Outline (Nimbus)
 s_kbitmap = Bitmap
 t_fsample = ÄÖÜ äöü ß 0123
 s_khint1 = GeoWorks 1.x hat noch keine Sound-Bibliothek: das Programm steuert den PC-Lautsprecher selbst.
@@ -254,7 +254,7 @@ g_bold = fett
 g_ital = kursiv
 g_under = unterstrichen
 g_strike = durchgestrichen
-g_outl = Umriss
+g_outl = Outline
 g_big = Groß 24
 # --- Eingabeseite ---
 i_keys = Tastatur (MSG_META_KBD_CHAR)

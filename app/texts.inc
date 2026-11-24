@@ -28,7 +28,7 @@ c_fkind: db 'Art und Gr',0x9a,0xa7,'en',0
 c_fsample: db 'Muster in der Schrift',0
 s_nofonts: db 'keine Schriften gefunden (Ordner GEOWORKS\FONT)',0
 s_kprinter: db 'Drucker',0
-s_koutline: db 'Umriss (Nimbus)',0
+s_koutline: db 'Outline (Nimbus)',0
 s_kbitmap: db 'Bitmap',0
 t_fsample: db 0x80,0x85,0x86,' ',0x8a,0x9a,0x9f,' ',0xa7,' 0123',0
 s_khint1: db 'GeoWorks 1.x hat noch keine Sound-Bibliothek: das Programm steuert den PC-Lautsprecher selbst.',0
@@ -246,7 +246,7 @@ g_bold: db 'fett',0
 g_ital: db 'kursiv',0
 g_under: db 'unterstrichen',0
 g_strike: db 'durchgestrichen',0
-g_outl: db 'Umriss',0
+g_outl: db 'Outline',0
 g_big: db 'Gro',0xa7,' 24',0
 i_keys: db 'Tastatur (MSG_META_KBD_CHAR)',0
 i_last: db 'Letzte Tasten (neueste oben):',0

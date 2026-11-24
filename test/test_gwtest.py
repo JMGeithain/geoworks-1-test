@@ -87,7 +87,7 @@ for f in fl: print('   ', f)
 check([f[0] for f in fl] == ['Berkeley', 'dingbats-Thin', 'LED', 'Printer 10cpi', 'URW Sans'],
       'Schriften: 5 Dateien gelesen, Nicht-Schriften übersprungen, nach Namen sortiert')
 check(fl[0][1:] == ('BERKELEY.FNT', 0x0202, 0, [9, 10, 12, 14, 18]), 'Berkeley: Datei, ID 0202h, Bitmapgrößen sortiert ohne Doppelte/Fett')
-check(fl[4][3] == 1 and fl[1][3] == 1 and fl[2][3] == 0, 'Umriss- und Bitmapschriften unterschieden')
+check(fl[4][3] == 1 and fl[1][3] == 1 and fl[2][3] == 0, 'Outline- und Bitmapschriften unterschieden')
 check(g.enums == 1 and not g.dirs, 'FileEnum einmal, Verzeichnis zurückgesetzt')
 check(val[(4, 'Schriften (Ordner FONT)')] == '5 Schriftdateien', 'Seite GEOS: Zahl der Schriften')
 check(val[(9, 'Klänge der Oberfläche ([ui] sound)')] == 'true', 'Seite Klang: [ui] sound aus GEOS.INI')
@@ -100,7 +100,7 @@ for p in range(12):
     if p == 8: t8 = list(g.texts)
     if p == 9: t9 = list(g.texts)
 check(True, 'Alle 12 Seiten gezeichnet (out/seite0..11.png)')
-for t in ('Schriften', 'Klang', 'Berkeley', 'BERKELEY.FNT', '514 (0202h)', 'Bitmap 9/10/12/14/18', 'Umriss (Nimbus)', 'Drucker 12', 'ÄÖÜ äöü ß 0123'):
+for t in ('Schriften', 'Klang', 'Berkeley', 'BERKELEY.FNT', '514 (0202h)', 'Bitmap 9/10/12/14/18', 'Outline (Nimbus)', 'Drucker 12', 'ÄÖÜ äöü ß 0123'):
     check(t in t8, 'Seite Schriften zeigt "%s"' % t)
 for t in ('Ton A (440 Hz)', 'Alle meine Entchen', 'Xylophon', 'Instrument: Klavier – einen Knopf der oberen Reihe anklicken'):
     check(t in t9, 'Seite Klang zeigt "%s"' % t)
