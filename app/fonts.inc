@@ -35,7 +35,7 @@
 s_fontdir: db 'FONT',0
 s_fcount:  db 'Installierte Schriften: ',0
 s_fsys:    db 'Systemschrift: ',0
-s_fout:    db ' ',0xe1,' Schrifttreiber: ',0
+s_fout:    db ' ',0xe1,' Font-Treiber: ',0
 s_paren:   db ' (',0
 s_hparen:  db 'h)',0
 
