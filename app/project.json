@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "name": "gwtest",
+  "kind": "application",
+  "backend": "ensemble12",
+  "cpu": "8086",
+  "long_name": "GeoWorks 1.x Test",
+  "token": "GWT1",
+  "sources": [{"language": "nasm", "path": "gwtest.nasm"}],
+  "view": {"width": 640, "height": 460},
+  "native_runtime_tested": false
+}

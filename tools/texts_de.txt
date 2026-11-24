@@ -1,0 +1,319 @@
+# Texte fuer GeoWorks 1.x Test (UTF-8). tools/gen_texts.py macht daraus
+# app/texts.inc im GEOS-Zeichensatz.
+# [str]: name = text        [lines NAME]: Zeilen "typ text"
+#   typ 1 = Ueberschrift, 0 = Text, 3 = eingerueckt, 2 = kleiner Abstand
+
+[str]
+s_title = GeoWorks 1.x Test
+s_sub = Systeminformation und Vorführung des SDK
+s_dash = –
+s_measure = Jetzt messen (M)
+t_p0 = Übersicht
+t_p1 = System
+t_p2 = Speicher
+t_p3 = Bildschirm
+t_p4 = GEOS
+t_p5 = Leistung
+t_p6 = Grafik
+t_p7 = Eingabe
+t_p8 = Schriften
+t_p9 = Klang
+f_p0 = 1–9, 0 Seite · N/P blättern · M messen · S speichern · K kopieren · Datei > Drucken
+f_p1 = Pfeiltasten oder + / − rollen · 1–9, 0 Seite · M neu messen
+f_p5 = M oder Knopf: Grafik, Speicher und Datei messen (dauert einige Sekunden)
+f_p6 = Alles hier wird mit den Grafikbefehlen des Kernels gezeichnet
+f_p7 = Jede Taste wird angezeigt · Seitenwechsel mit der Maus oder dem Menü Seite
+f_p8 = Pfeiltasten oder + / − rollen · jedes Muster in seiner eigenen Schrift · 1–9, 0 Seite
+f_p9 = Knöpfe anklicken: Klang über den PC-Lautsprecher · 1–9, 0 Seite
+c_fname = Name
+c_ffile = Datei
+c_fid = ID
+c_fkind = Art und Größen
+c_fsample = Muster in der Schrift
+s_nofonts = keine Schriften gefunden (Ordner GEOWORKS\FONT)
+s_kprinter = Drucker
+s_koutline = Umriss (Nimbus)
+s_kbitmap = Bitmap
+t_fsample = ÄÖÜ äöü ß 0123
+s_khint1 = GeoWorks 1.x hat noch keine Sound-Bibliothek: das Programm steuert den PC-Lautsprecher selbst.
+s_khint2 = Die Instrumente unterscheiden sich im Anschlag; Akkorde erklingen als schnelles Arpeggio (eine Stimme).
+s_kplay = Abspielen
+s_kinstr = Instrument
+k_b0 = Ton A (440 Hz)
+k_b1 = Tonleiter C-Dur
+k_b2 = Alle meine Entchen
+k_b3 = Akkord (3 Stimmen)
+k_i0 = Klavier
+k_i1 = Orgel
+k_i2 = Flöte
+k_i3 = Xylophon
+h_sound = Klang (PC-Lautsprecher)
+l_sndout = Ausgabe
+v_sndout = PC-Lautsprecher über Zeitgeber 2 (Ports 42h, 43h, 61h)
+l_uisnd = Klänge der Oberfläche ([ui] sound)
+l_sndlib = Sound-Bibliothek
+v_sndlib = keine (kam erst mit GEOS 2)
+l_fonts = Schriften (Ordner FONT)
+v_fntfiles = Schriftdateien
+f_help = Pfeiltasten rollen · Esc zurück zur Übersicht
+m_saved = Bericht gespeichert: DOCUMENT\GWTEST.TXT
+m_nsave = Speichern fehlgeschlagen (DOCUMENT\GWTEST.TXT)
+m_copied = Bericht in die Zwischenablage kopiert – in GeoWrite einfügen
+m_ncopy = Kopieren fehlgeschlagen
+m_meas = Messung läuft …
+m_done = Messung fertig
+m_printed = Bericht an den Drucker übergeben
+s_docname = GeoWorks 1.x Test
+s_clipname = Systembericht
+s_rtitle = GeoWorks 1.x Test – Systembericht
+s_rpage = Seite
+s_rdate = Erstellt am
+s_statedir = STATE
+s_docdir = DOCUMENT
+s_txtname = GWTEST.TXT
+s_tmpname = GWTEST.TMP
+s_bench = GeoWorks
+# --- Abschnitte ---
+h_glance = Auf einen Blick
+h_app = Dieses Programm
+h_cpu = Prozessor
+h_bios = BIOS und Emulator
+h_equip = Ausstattung
+h_dos = DOS
+h_conv = Konventioneller Speicher
+h_ext = Erweiterungsspeicher
+h_xms = XMS (Extended Memory)
+h_ems = EMS (Expanded Memory)
+h_gmem = GEOS-Speicherverwaltung (GEOS.INI)
+h_gscr = GEOS-Bildschirmtreiber
+h_card = Grafikkarte
+h_win = Programmfenster
+h_ver = Version
+h_ui = Oberfläche
+h_dev = Geräte
+h_pcpu = Prozessor
+h_pgfx = Grafik (GEOS-Grafiksystem)
+h_psys = Speicher und Datei
+# --- Bezeichnungen ---
+l_machine = Rechner
+l_cpu = Prozessor
+l_fpu = Rechenkoprozessor
+l_speed = Geschwindigkeit
+l_ram = Arbeitsspeicher
+l_gfx = Grafik
+l_geos = GeoWorks
+l_dos = DOS
+l_date = Datum und Uhrzeit
+l_wsize = Fenstergröße
+l_type = Typ
+l_vendor = Hersteller (CPUID)
+l_fms = Familie / Modell / Stufe
+l_brand = Bezeichnung
+l_loops = Schleifen pro Sekunde
+l_index = Geschwindigkeitsindex
+l_emu = Emulator / BIOS
+l_bios = BIOS-Kennung
+l_bdate = BIOS-Datum
+l_modb = Modell-Byte
+l_floppy = Diskettenlaufwerke
+l_hdd = Festplatten
+l_com = Serielle Schnittstellen
+l_lpt = Parallele Schnittstellen
+l_kbd = Tastatur
+l_dosver = Version
+l_truev = Wahre Version (3306h)
+l_drive = Aktuelles Laufwerk
+l_space = Speicherplatz
+l_windows = Windows
+l_comspec = COMSPEC
+l_blaster = BLASTER (Soundkarte)
+l_int12 = INT 12h
+l_cmos = Laut CMOS
+l_int15 = INT 15h, Funktion 88h
+l_drv = Treiber
+l_xfree = Frei insgesamt
+l_xlarge = Größter freier Block
+l_efree = Frei / gesamt
+l_gmemdrv = Speichertreiber
+l_handles = Handles
+l_swap = Auslagerungsdatei
+l_swsize = Auslagerung (Größe)
+l_device = Gerät
+l_cmode = Farbmodus
+l_vmode = Videomodus
+l_res = Auflösung
+l_depth = Farbtiefe
+l_vbe = VESA-BIOS
+l_oem = Hersteller (OEM)
+l_vprod = Anbieter / Produkt
+l_vmem = Videospeicher
+l_size = Größe
+l_origin = Ursprung im Dokument
+l_proto = Kernel / UI (Zielprofil)
+l_kernel = KERNEL.EXE
+l_dir = GEOS-Verzeichnis
+l_gui = Generische UI
+l_sui = Spezifische UI
+l_font = Systemschrift
+l_backgr = Hintergrund
+l_autost = Autostart
+l_kdrv = Tastaturtreiber
+l_mouse = Maus
+l_mdrv = Maustreiber
+l_printer = Drucker
+l_nprint = Zahl der Drucker
+l_task = Task-Treiber
+l_rect = Rechtecke (GrFillRect)
+l_text = Texte (GrDrawText)
+l_ell = Ellipsen (GrDrawEllipse)
+l_bmp = Bitmaps 48×30 (GrDrawBitmap)
+l_mem = Speicherblöcke (MemAlloc)
+l_fwr = Datei schreiben (STATE)
+l_frd = Datei lesen (STATE)
+l_status = Stand
+# --- Werte ---
+v_yes = vorhanden
+v_no = nicht vorhanden
+v_none = keine
+v_noemu = kein Emulator erkannt
+v_notm = nicht messbar (BIOS-Uhr steht)
+v_xt = (IBM PC/XT = 1,0)
+v_conv = konventionell
+v_ext = erweitert
+v_colors = Farben
+v_bit = Bit
+v_kbu = KB
+v_mbu = MB
+v_persec = pro Sekunde
+v_kbps = KB/s
+v_free = frei
+v_of = von
+v_notyet = noch nicht gemessen – Knopf unten rechts oder Taste M
+v_measured = gemessen, je etwa 0,5 Sekunden
+v_tc = Echtfarben (64K / TrueColor)
+v_16 = 16 Farben (Palette)
+v_ext101 = erweitert (101/102 Tasten)
+v_std84 = Standard (83/84 Tasten)
+v_winno = nicht aktiv
+v_win = aktiv, Version
+v_noset = nicht gesetzt
+v_noat = – (kein AT)
+v_xmsby = 0 KB (vom XMS-Treiber übernommen)
+v_nosup = nicht unterstützt
+v_xmsv = XMS
+v_xmsdrv = Treiber
+v_emsv = EMS
+v_pages = Seiten
+v_bytes = Byte
+v_proto = 622.3 / 693.0
+v_vbe = VBE
+v_x = ×
+v_comma = ,
+v_cpu0 = 8086 / 8088
+v_cpu1 = 80186 / 80188
+v_cpu2 = 80286
+v_cpu3 = 80386
+v_cpu4 = 80486
+v_cpu5 = Pentium-Klasse
+v_cpu6 = Pentium-Pro-Klasse (P6) oder neuer
+v_cpu15 = Pentium-4-Klasse oder neuer
+v_integr = integriert
+v_mb0 = unbekannt
+v_mbff = IBM PC
+v_mbfe = IBM PC/XT
+v_mbfd = IBM PCjr
+v_mbfc = IBM AT oder kompatibel
+v_mbfb = IBM PC/XT (1986)
+v_mbfa = IBM PS/2 Modell 30
+v_mbf9 = IBM PC Convertible
+v_mbf8 = IBM PS/2 Modell 80
+v_msdos = MS-DOS
+v_pcdos = PC DOS
+v_drdos = DR-DOS
+v_freedos = FreeDOS
+v_oem = OEM
+v_days = SoMoDiMiDoFrSa
+v_uhr = Uhr
+v_noemu2 = (kein Emulator erkannt)
+v_inprog = hier gemessen
+# --- Grafikseite ---
+g_pal = 16 Systemfarben (Palettenindex)
+g_rgb = RGB-Verläufe (AH = 80h)
+g_shapes = Rechtecke, Flächen, Ellipsen
+g_masks = Füllmuster (GrSetAreaMask)
+g_fonts = Schriften und Stile
+g_bmp = Bitmaps (GrDrawBitmap)
+g_bmp1 = 4 Bit + Maske
+g_bmp2 = 24 Bit (nur Echtfarben)
+g_bmp3 = 1 Bit
+g_roman = URW Roman 14
+g_sans = URW Sans 14
+g_mono = URW Mono 12
+g_berk = Berkeley 10
+g_bold = fett
+g_ital = kursiv
+g_under = unterstrichen
+g_strike = durchgestrichen
+g_outl = Umriss
+g_big = Groß 24
+# --- Eingabeseite ---
+i_keys = Tastatur (MSG_META_KBD_CHAR)
+i_last = Letzte Tasten (neueste oben):
+i_hdr = Nr.   Zeichen   CX     DL/DH
+i_mouse = Maus (eigenes Vis-Objekt, Mausgriff)
+i_pos = Position
+i_clicks = Klicks
+i_lastc = Letzter Klick
+i_bp = Tasten (BP)
+i_ends = Losgelassen (END)
+i_drags = Ziehen (DRAG)
+i_held = – gedrückt
+i_pad = Malfläche: mit gedrückter Maustaste zeichnen
+i_nokey = noch keine Taste gedrückt
+
+[lines help_text]
+1 Hilfe zu GeoWorks 1.x Test
+0 Das Programm liest aus, auf welchem Rechner oder Emulator GeoWorks läuft,
+0 und führt vor, was mit dem SDK pcgeos-1-sdk-v2 unter GeoWorks 1 möglich ist.
+2
+1 Seiten
+3 1 Übersicht – das Wichtigste auf einen Blick
+3 2 System – Prozessor, BIOS, Emulator, Schnittstellen, DOS
+3 3 Speicher – konventionell, CMOS, XMS, EMS, GEOS-Speichertreiber
+3 4 Bildschirm – GEOS-Treiber, VESA-BIOS, Auflösung, Farbtiefe
+3 5 GEOS – Version, Verzeichnis, Oberfläche, Geräte aus GEOS.INI
+3 6 Leistung – Rechen-, Grafik-, Speicher- und Dateitempo
+3 7 Grafik – Farben, RGB, Formen, Muster, Schriften, Bitmaps
+3 8 Eingabe – Tastencodes, Mauskoordinaten, Malfläche
+3 9 Schriften – alle Schriftdateien im Ordner FONT, jede mit einem Muster
+3 0 Klang – Töne, Tonleiter, Lied und Akkord über den PC-Lautsprecher
+2
+1 Tasten
+3 1 bis 9, 0: Seite wählen    N / Leertaste: nächste Seite    P: vorige Seite
+3 Pfeiltasten oder + / −: rollen    M: neu messen
+3 S: Bericht speichern    K: Bericht kopieren    H oder ?: Hilfe    I: Info
+3 Esc: zurück zur Übersicht
+2
+1 Menü Datei
+3 Bericht speichern – schreibt DOCUMENT\GWTEST.TXT (reiner ASCII-Text)
+3 In Zwischenablage kopieren – zum Einfügen in GeoWrite oder den Notizblock
+3 Drucken … – der ganze Bericht über den GeoWorks-Druckdialog
+3 Neu messen – Geschwindigkeit, Grafik, Speicher und Datei neu messen
+2
+1 Hinweise
+0 Die Werte stammen aus BIOS, DOS, VESA-BIOS, XMS-/EMS-Treiber und GEOS.INI.
+0 Emulatoren werden an ihrer Kennung im BIOS erkannt. Der Geschwindigkeits-
+0 index vergleicht mit einem IBM PC/XT (8088, 4,77 MHz) = 1,0.
+
+[lines info_text]
+1 GeoWorks 1.x Test – Version 1.1
+0 Systeminformation und Vorführung für GeoWorks Ensemble 1.2 (Kernel 1.28).
+2
+0 Geschrieben in 8086-Assembler (NASM) mit dem SDK pcgeos-1-sdk-v2
+0 (github.com/dnesbitt142/pcgeos-1-sdk-v2) und den Erweiterungen aus
+0 Schnecke, GeoLosung, GeoMaler und dem PDF-Betrachter:
+3 Menüs, Programmsymbol, Druckdialog, Zwischenablage, GEOS.INI, Dateien
+3 FileEnum und Schriftköpfe, PC-Lautsprecher über die Nachrichten-Warteschlange
+2
+0 Programmsymbol: Bildschirm mit Farbbalken (GTS1ICON.PCX).
+0 Lizenz: MIT.

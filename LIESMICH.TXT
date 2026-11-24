@@ -1,0 +1,63 @@
+GeoWorks 1.x Test 1.1 - Systeminformation und SDK-Vorfuehrung
+==============================================================
+fuer GeoWorks Ensemble 1.2 (Kernel 1.28, deutsch)
+
+INSTALLATION
+  1. GeoWorks beenden.
+  2. out\GWTEST.GEO nach GEOWORKS\WORLD kopieren.
+  3. GeoWorks starten, "GeoWorks 1.x Test" im GeoManager oeffnen.
+  Die alte GEOTEST.GEO (Kennung GTS1) kann bleiben oder geloescht werden;
+  die neue App hat die Kennung GWT1 und stoert sie nicht.
+
+SEITEN (Reiter, Tasten 1-9 und 0, Menue "Seite")
+  1 Uebersicht   Rechner/Emulator, Prozessor, Speicher, Grafik, Versionen
+  2 System       CPU (auch CPUID), Rechenkoprozessor, BIOS-Kennung,
+                 Emulator, BIOS-Datum, Modell-Byte, Laufwerke, COM/LPT,
+                 Tastatur, DOS-Version, Speicherplatz, Windows, COMSPEC,
+                 BLASTER
+  3 Speicher     INT 12h, CMOS, INT 15h/88h, XMS, EMS, GEOS-Speichertreiber
+  4 Bildschirm   GEOS-Treiber, Farbmodus, Videomodus, VESA-BIOS (OEM,
+                 Hersteller, Videospeicher), Aufloesung, Farbtiefe, Fenster
+  5 GEOS         Version, KERNEL.EXE, Verzeichnis, UI, Schrift,
+                 Hintergrund, Autostart, Tastatur, Maus, Drucker (GEOS.INI)
+  6 Leistung     Geschwindigkeitsindex (IBM PC/XT = 1,0); Knopf "Jetzt
+                 messen" / Taste M: Rechtecke, Texte, Ellipsen, Bitmaps
+                 pro Sekunde, MemAlloc, Datei schreiben/lesen
+  7 Grafik       16 Farben, RGB-Verlaeufe, Formen, Fuellmuster, Schriften
+                 und Stile, Bitmaps 1/4/24 Bit
+  8 Eingabe      Tastencodes (CX, DL/DH), Mausposition, Klicks, Tasten (BP);
+                 Malflaeche: mit gedrueckter Maustaste zeichnen (eigenes Vis-Objekt
+                 mit Mausgriff wie im Kindermaler)
+  9 Schriften    alle Schriftdateien in GEOWORKS\FONT: Name, Datei, Font-ID,
+                 Bitmap (mit Groessen) / Umriss (Nimbus) / Drucker, dazu ein
+                 Muster in der Schrift selbst; Systemschrift aus GEOS.INI.
+                 GeoWorks 1 hat kein GrEnumFonts fuer Programme: die App liest
+                 den Kopf jeder .FNT-Datei ("BSWF") selbst (FileEnum).
+  0 Klang        Ton A (440 Hz), Tonleiter C-Dur, "Alle meine Entchen",
+                 Akkord; Instrumente Klavier, Orgel, Floete (Vibrato),
+                 Xylophon. GeoWorks 1 hat noch keine Sound-Bibliothek: die App
+                 steuert den PC-Lautsprecher direkt (Zeitgeber 2). Eine Stimme,
+                 daher der Akkord als schnelles Arpeggio. Jede Note ist eine
+                 eigene Nachricht in der Warteschlange - die App bleibt bedienbar.
+
+MENUE DATEI
+  Bericht speichern      -> GEOWORKS\DOCUMENT\GWTEST.TXT (ASCII)
+  In Zwischenablage      -> zum Einfuegen in GeoWrite (Tab vor den Werten)
+  Drucken...             -> GeoWorks-Druckdialog, ganzer Bericht
+  Neu messen, Info, dazu Menue Hilfe
+
+TASTEN
+  1-9, 0 Seite  N/Leertaste/P blaettern  Pfeile oder +/- rollen  M messen
+  S speichern  K kopieren  H/? Hilfe  I Info  Esc Uebersicht
+
+HINWEISE
+  - DOS-Abfragen laufen ueber Kernel 95 (wie bei DCLOCK24/GeoLosung).
+  - Die Leistungsmessung schreibt kurz STATE\GWTEST.TMP und leert sie danach.
+  - Emulatoren werden an ihrer Kennung im BIOS erkannt (DOSBox, DOSBox-X,
+    Basebox, 86Box, PCem, QEMU, Bochs, VirtualBox, VMware, ...).
+
+ENTWICKLUNG
+  NASM 8086 mit dem SDK pcgeos-1-sdk-v2 und den Erweiterungen aus
+  Schnecke, GeoLosung (Zwischenablage), GeoMaler und PDF-Betrachter
+  (Menues, Druckdialog). Texte: tools/texts_de.txt, Symbol: icon/.
+  Bauen:  SDK=/pfad/zu/pcgeos-1-sdk-v2 ./build.sh       (Test: ./build.sh test)
